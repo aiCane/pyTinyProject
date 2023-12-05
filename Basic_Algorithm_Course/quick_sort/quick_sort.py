@@ -1,6 +1,6 @@
 def quick_sort(q, ll, r):
     if ll >= r:
-        return q
+        return
     x = q[ll]
     i = ll - 1
     j = r + 1
@@ -20,7 +20,7 @@ def quick_sort(q, ll, r):
 
 
 if __name__ == "__main__":
-    n = int(input("n: "))
-    lst = [num for num in input("numbers: ").split()]  # type(num) == string
+    n = int(input("n:"))
+    lst = [int(num) for num in input("numbers:").split()]  # type(num) == int  # !!!
     quick_sort(lst, 0, n - 1)
     [print(i, end=" ") for i in lst]
