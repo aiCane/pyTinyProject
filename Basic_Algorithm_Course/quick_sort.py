@@ -21,6 +21,6 @@ def quick_sort(q, ll, r):
 
 if __name__ == "__main__":
     n = int(input("n: "))
-    lst = [int(num) for num in input("numbers: ").split()]
+    lst = [num for num in input("numbers: ").split()]  # type(num) == string
     quick_sort(lst, 0, n - 1)
     [print(i, end=" ") for i in lst]
