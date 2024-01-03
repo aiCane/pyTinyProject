@@ -12,6 +12,9 @@
 # 整数之间用空格分割。
 # 输出格式：一个整数，代表最大的路径和。
 
-n = int(input("rank: "))
+n = int(input("rank:"))
+lst = []
 for i in range(n):
-    pass
+    lst.append([])
+    lst[i].append(int(num) for num in input().split())
+print(lst)
