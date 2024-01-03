@@ -1,7 +1,7 @@
 def merge_sort(q, ll, r):
     if ll >= r:
         return
-    mid = ll + r >> 1
+    mid = ll + r >> 1  # (ll + r) >> 1
     merge_sort(q, ll, mid)
     merge_sort(q, mid + 1, r)
     k = 0
